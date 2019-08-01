@@ -43,6 +43,12 @@ let penalPendientesSchema = new Schema({
         type:Number,
         default:0
     }
+},{
+    writeConcern: {
+        w: 'majority',
+        j: true,
+        wtimeout: 1000
+      }
 });
 
 
