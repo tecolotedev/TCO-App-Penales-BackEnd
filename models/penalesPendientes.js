@@ -30,6 +30,18 @@ let penalPendientesSchema = new Schema({
     votosNegativos:{
         type:Number,
         default:0
+    },
+    aprobado:{
+        type:Boolean,
+        default:false,
+    },
+    oculto:{
+        type:Boolean,
+        default:false
+    },
+    votado:{
+        type:Number,
+        default:0
     }
 });
 
