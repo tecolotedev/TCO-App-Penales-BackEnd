@@ -16,7 +16,7 @@ let urlDB='';
 if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://localhost:27017/penalesDev'
 } else {
-    urlDB = process.env.MONGO_URI; // Variables de entorno personalizadas de Heroku o en produccion'
+    urlDB = 'mongodb+srv://Manuel11713:Spartan11713!!/!#qwerty@cluster0-rhrav.mongodb.net/test?retryWrites=true&w=majority'; // Variables de entorno personalizadas de Heroku o en produccion'
 }
 process.env.URLDB = urlDB;
 

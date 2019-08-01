@@ -2,9 +2,16 @@ require('./config/config.js')
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-
+const path = require('path');
 
 app.use(require('./routes/index.routes'));
+
+
+
+app.use(express.static(path.join(__dirname, 'build')));
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 
 
